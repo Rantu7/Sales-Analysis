@@ -5,7 +5,7 @@
 The objective of the "Pizza Sales Data Analysis" project is to gain valuable insights by answering critical business questions posed by the owner. By leveraging SQL programming in MySQL, key performance indicators such as total revenue, total orders, sales per day etc. along with more complex questions were answered . To enhance understanding and facilitate decision-making, the results were then visualized using relevant graphs and charts in Power BI. Through this approach, we tried to provide actionable insights that could assist the owner to make calculated strategic decisions and drive business growth.
 
 ## About the Data
-The data set consisted of total 4 .csv files which can be found here. Brief description about the columns in the data files are given in the table below, where the first row indicates the file names:
+The data set was downloaded from Kaggle, which can be found [here](https://www.kaggle.com/datasets/miniyadav/pizza-sales-case-study). It contains four .csv files which were downloaded and then imported into MySQL. Brief description about the columns in the data files are given in the table below, where the first row indicates the file names:
 ![Q1](https://i.ibb.co/bRcbKyN/datass.png)
 
 ## The Questions
@@ -293,6 +293,7 @@ The above graph shows that the revenue curve had significant fluctuations over t
 
 
 ## Dashboard
+The results from SQL analysis were exported as .csv files and loaded into Power BI. Below is a snapshot of the final dashboard:
 
 ![Q15](https://i.ibb.co/n0TbLc3/dashboard.png)
 
