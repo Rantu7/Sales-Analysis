@@ -1,4 +1,5 @@
 # <p align="center">Pizza Sales Data Analysis</p>
+# <p align="center">![Pic](https://unsplash.com/photos/selective-focus-photography-of-two-pizzas-exSEmuA7R7k)</p>
 ## Objective
 The objective of the "Pizza Sales Data Analysis" project is to gain valuable insights by answering critical business questions posed by the owner. By leveraging SQL programming in MySQL, key performance indicators such as total revenue, total orders, sales per day etc. along with more complex questions were answered . To enhance understanding and facilitate decision-making, the results were then visualized using relevant graphs and charts in Power BI. Through this approach, we tried to provide actionable insights that would assist the owner to make calculated strategic decisions and drive business growth.
 
@@ -37,7 +38,7 @@ SELECT
     PIZZA_TYPES.NAME, PIZZAS.PRICE
 FROM
     PIZZA_TYPES
-        JOIN
+JOIN
     PIZZAS ON PIZZA_TYPES.PIZZA_TYPE_ID = PIZZAS.PIZZA_TYPE_ID
 ORDER BY PRICE DESC
 LIMIT 1;
@@ -52,7 +53,7 @@ SELECT
     PIZZAS.SIZE, COUNT(ORDER_DETAILS.QUANTITY) TOTAL_ORDERS
 FROM
     ORDER_DETAILS
-        JOIN
+JOIN
     PIZZAS ON ORDER_DETAILS.PIZZA_ID = PIZZAS.PIZZA_ID
 GROUP BY SIZE;
 ```
