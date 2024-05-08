@@ -64,7 +64,9 @@ Visualization:
 
 ![Q4](https://i.ibb.co/VpdWWyD/4bi.png)
 
-The above graph shows that the most ordered pizza size was L, with 18526 orders. And the least ordered pizza size was the largest size XXL, with only 28 orders. So, there is a huge discrepency between the order counts of these 2 pizza sizes. A few recommendations that could boost the sales of XXL size of pizzas:
+The above graph shows that the most ordered pizza size was L, with 18526 orders. And the least ordered pizza size was the largest size XXL, with only 28 orders. So, there is a huge discrepency between the order counts of these 2 pizza sizes.
+### Recommendation
+
 - Introduce special promotions or discounts specifically for the XXL size pizzas to incentivize customers to try them. For example, offer a "buy one, get one free" deal or a discount for ordering an XXL pizza with a certain topping combination. Or attract the customer's attention by giving away coupons or scratch cards that gurantees exciting prizes only with the XXL size.
 - Create combo deals that include an XXL pizza along with other menu items, such as sides, drinks, or desserts, at a discounted price. This can encourage customers to opt for the XXL size as part of a larger order.
 - Introduce limited-time offers or seasonal specials featuring the XXL size pizzas to create a sense of urgency and encourage customers to try them while they're available for a limited time.
@@ -130,7 +132,7 @@ Visualization:
 
 The above graph shows the number of orders hit its peak at 12 pm and stays consistent till 1pm, which is normal for lunch hours. From 3pm to 6pm, the order count keeps increasing from 1.5k to 2.4k. This tells that buyers also prefer ordering from the pizza shop for afternoon or evening snacks. However, the orders start decreasing after 6pm and does not rise at all until the shop closes at 12 am. This means, although customer are placing orders for lunch and evening snacks, the pizza shop is not popular for dinner. 
 
-# Recommendations
+### Recommendation
 - Create a welcoming and inviting atmosphere during dinner hours by adjusting lighting, playing background music, and ensuring cleanliness and comfort in the dining area. Consider adding outdoor seating or entertainment options to enhance the dining experience.
 - Create special offers or discounts specifically for dinner hours to encourage customers to visit during that time. This could include meal deals, discounts on certain menu items, or limited-time promotions available exclusively for dinner.
 - Add new menu items or variations specifically designed for dinner, such as specialty pizzas, appetizers, drinks, or desserts. Offering a diverse range of options can attract customers looking for a satisfying dinner experience.
