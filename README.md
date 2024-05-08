@@ -216,8 +216,16 @@ Result:
 
 Visualization:
 
-![Q11](https://i.ibb.co/CV6jzDq/11b.png) by month
+![Q11](https://i.ibb.co/CV6jzDq/11b.png)
 
+According to the above graph, the cumulative revenue starts at 1M in January and consistently grows to reach 24M by November. The curve is mostly smooth, indicating steady growth of the business without any significant fluctuations or drops.
+
+### Recommendation
+- Analyze what contributed to the revenue spikes around May and September to understand which strategies or market conditions were most effective.
+- Once growth factors are identified, focus on sustaining these strategies and explore ways to enhance them.
+- As the revenue is growing, the company should prepare for scaling operations to handle increased business size without compromising service quality.
+-  Continue monitoring revenue trends closely to quickly identify any deviations from expected growth patterns and address them proactively.
+  
 ## 12.	Find the top 3 most ordered pizza types based on revenue for each pizza category.
 ```mysql
  SELECT NAME, CATEGORY, REVENUE FROM
@@ -272,5 +280,12 @@ Visualization:
 
 ![Q14](https://i.ibb.co/RQCyPvS/14b.png)
 
+The above graph shows that the revenue curve fluctuates over the 12 months. The months of March, May, July and November generated significant amount of revenue for the pizza shop. Peak revenue of 72.6k dollars was earned in July. Howeve, September and October generated the lowest amount of revenue around 64k dollars.
 
+### Recommendation
+- Investigate what causes the spikes in May and July. Consider enhancing marketing efforts during these periods or expanding the product line to capitalize on high demand.
+- Look into the reasons behind the revenue dips from August to October. If these are due to operational issues, consider strategies for improvement. If seasonal, think about promotional activities or special offers to boost sales. Introduce special promotions such as "buy one get one free" or discounts during these months to attract more customers.
+-  Introduce seasonal menu items or promotions tailored to the months with low revenue. For example, offer refreshing cold drinks or lighter pizza options during the summer months, and warm, comfort food options during the colder months. Adjusting the menu to align with seasonal preferences can attract customers during traditionally slower periods.
+-  Focus on providing exceptional customer service and dining experiences during low revenue months to encourage repeat business. Train staff to upsell menu items, engage with customers, and create a welcoming atmosphere. Offer special amenities or entertainment options to differentiate the pizza shop from competitors and attract diners.
+-  Regularly collect customer feedback to understand preferences and areas for improvement. Use this data to innovate the menu and service offerings. Consider seasonal or trending ingredients to keep the menu exciting and relevant.
 
