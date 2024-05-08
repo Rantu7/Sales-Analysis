@@ -60,6 +60,9 @@ Result:
 
 ![Q4](https://i.ibb.co/tLGZGKS/4.png)
 
+Visualization:
+![Q4](https://i.ibb.co/VpdWWyD/4bi.png)
+
 ## 5.	List the top 5 most ordered pizza types along with their quantities.
 ```mysql
 SELECT 
