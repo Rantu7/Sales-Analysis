@@ -28,6 +28,7 @@ JOIN
     ORDER_DETAILS ON PIZZAS.PIZZA_ID = ORDER_DETAILS.PIZZA_ID;
 ```
 Result: 
+
 ![Q2](https://i.ibb.co/MpZjtv9/2.png)
 
 ## 3. Identify the highest-priced pizza.
@@ -94,4 +95,139 @@ GROUP BY 1;
 Result:
 
 ![Q6](https://i.ibb.co/YLGNfcf/6.png)
+
+## 7. Determine the distribution of orders by hour of the day.
+```mysql
+SELECT 
+    HOUR(ORDER_TIME), COUNT(ID) AS ORDER_COUNT
+FROM
+    ORDERS
+GROUP BY 1;
+```
+Result:
+
+![Q7](https://i.ibb.co/V3TkPmN/7.png)
+
+## 8.	What is the average amount of pizzas ordered per day?
+```mysql
+SELECT 
+    ROUND(AVG(QUANTITY),2) AS AVG_ORDERS_PER_DAY
+FROM
+    (SELECT 
+        ORDERS.ORDER_DATE, SUM(ORDER_DETAILS.QUANTITY) AS QUANTITY
+    FROM
+        ORDERS
+    JOIN ORDER_DETAILS ON ORDERS.ID = ORDER_DETAILS.ID
+    GROUP BY 1) AS SUBQ;
+```
+Result:
+
+![Q8](https://i.ibb.co/DKrFxBr/8.png)
+
+## 9.	Determine the top 5 most ordered pizza types based on revenue.
+```mysql
+SELECT 
+    PIZZA_TYPES.NAME,
+    ROUND(SUM(PIZZAS.PRICE * ORDER_DETAILS.QUANTITY),2) AS REVENUE
+FROM
+    PIZZAS
+        JOIN
+    ORDER_DETAILS ON PIZZAS.PIZZA_ID = ORDER_DETAILS.PIZZA_ID
+        JOIN
+    PIZZA_TYPES ON PIZZAS.PIZZA_TYPE_ID = PIZZA_TYPES.PIZZA_TYPE_ID
+GROUP BY 1
+ORDER BY 2 DESC
+LIMIT 5;
+```
+Result:
+
+![Q9](https://i.ibb.co/c8mgHxX/9.png)
+
+## 10.	Calculate the percentage contribution of each pizza type to total revenue.
+```mysql
+SELECT 
+    PIZZA_TYPES.Name, ROUND(SUM(PIZZAS.PRICE * ORDER_DETAILS.QUANTITY),2) AS Revenue,
+	(SUM(PIZZAS.PRICE * ORDER_DETAILS.QUANTITY)/
+		(SELECT SUM(PIZZAS.PRICE * ORDER_DETAILS.QUANTITY)
+		 FROM PIZZAS
+		 JOIN
+    ORDER_DETAILS ON PIZZAS.PIZZA_ID = ORDER_DETAILS.PIZZA_ID
+    JOIN PIZZA_TYPES ON PIZZAS.PIZZA_TYPE_ID = PIZZA_TYPES.PIZZA_TYPE_ID))*100 AS Revenue_percentage
+FROM
+    PIZZAS
+JOIN
+    ORDER_DETAILS ON PIZZAS.PIZZA_ID = ORDER_DETAILS.PIZZA_ID
+    JOIN PIZZA_TYPES ON PIZZAS.PIZZA_TYPE_ID = PIZZA_TYPES.PIZZA_TYPE_ID
+    GROUP BY 1 ORDER BY 2 DESC;
+```
+Result:
+
+![Q10](https://i.ibb.co/W25B3m4/10.png)
+
+## 11.	Find the cumulative revenue generated over time.
+```mysql
+SELECT ORDER_DATE,
+ROUND(SUM(REVENUE) OVER (ORDER BY ORDER_DATE),2) AS CUMULATIVE_REVENUE 
+FROM
+	(SELECT ORDERS.ORDER_DATE, SUM(PIZZAS.PRICE * ORDER_DETAILS.QUANTITY) AS REVENUE 
+    FROM ORDERS
+    JOIN ORDER_DETAILS ON ORDERS.ID = ORDER_DETAILS.ID
+    JOIN PIZZAS ON PIZZAS.PIZZA_ID = ORDER_DETAILS.PIZZA_ID
+    GROUP BY 1) AS SUBQUERY;
+```
+Result:
+
+![Q11](https://i.ibb.co/L0FyBZt/11.png)
+
+## 12.	Find the top 3 most ordered pizza types based on revenue for each pizza category.
+```mysql
+ SELECT NAME, CATEGORY, REVENUE FROM
+	(SELECT NAME, CATEGORY, REVENUE, 
+	RANK() OVER (PARTITION BY CATEGORY ORDER BY REVENUE DESC) AS RANKS 
+	FROM
+		(SELECT PIZZA_TYPES.NAME, PIZZA_TYPES.CATEGORY, SUM(PIZZAS.PRICE * ORDER_DETAILS.QUANTITY) AS REVENUE 
+		FROM PIZZA_TYPES JOIN PIZZAS ON PIZZA_TYPES.PIZZA_TYPE_ID = PIZZAS.PIZZA_TYPE_ID
+		JOIN ORDER_DETAILS ON PIZZAS.PIZZA_ID = ORDER_DETAILS.PIZZA_ID
+		GROUP BY 1,2) AS SUBQ) 
+	AS SUBQ2
+WHERE RANKS <=3;
+```
+Result:
+
+![Q12](https://i.ibb.co/3pZ1x2P/12.png)
+
+## 13.	Rank each pizza category based on the total revenue.
+```mysql
+SELECT CATEGORY, TOTAL_REVENUE,
+       RANK() OVER (ORDER BY TOTAL_REVENUE DESC) AS CATEGORY_RANK
+FROM (
+    SELECT PIZZA_TYPES.CATEGORY, ROUND(SUM(PIZZAS.PRICE *ORDER_DETAILS.QUANTITY),2) AS TOTAL_REVENUE 
+    FROM PIZZA_TYPES JOIN PIZZAS ON  PIZZA_TYPES.PIZZA_TYPE_ID = PIZZAS.PIZZA_TYPE_ID
+    JOIN  ORDER_DETAILS ON PIZZAS.PIZZA_ID = ORDER_DETAILS.PIZZA_ID
+    GROUP BY 1
+) AS CATEGORY_REVENUE;
+```
+Result:
+
+![Q13](https://i.ibb.co/LRbwmXs/13.png)
+
+## 14.	Calculate revenue generated for each month and find the months that made the highest revenue.
+```mysql
+SELECT 
+    MONTH(order_date) AS month,
+    ROUND(SUM(price * quantity), 2) AS revenue
+FROM
+    orders
+        JOIN
+    order_details ON orders.id = order_details.id
+        JOIN
+    pizzas ON order_details.pizza_id = pizzas.pizza_id
+GROUP BY MONTH(order_date)
+ORDER BY 2 DESC;
+```
+Result:
+
+![Q14](https://i.ibb.co/q1y9W1C/14.png)
+
+
 
