@@ -64,6 +64,13 @@ Visualization:
 
 ![Q4](https://i.ibb.co/VpdWWyD/4bi.png)
 
+The above graph shows that the most ordered pizza size was L, with 18526 orders. And the least ordered pizza size was the largest size XXL, with only 28 orders. So, there is a huge discrepency between the order counts of these 2 pizza sizes. A few recommendations that could boost the sales of XXL size of pizzas:
+- Introduce special promotions or discounts specifically for the XXL size pizzas to incentivize customers to try them. For example, offer a "buy one, get one free" deal or a discount for ordering an XXL pizza with a certain topping combination. Or attract the customer's attention by giving away coupons or scratch cards that gurantees exciting prizes only with the XXL size.
+- Create combo deals that include an XXL pizza along with other menu items, such as sides, drinks, or desserts, at a discounted price. This can encourage customers to opt for the XXL size as part of a larger order.
+- Introduce limited-time offers or seasonal specials featuring the XXL size pizzas to create a sense of urgency and encourage customers to try them while they're available for a limited time.
+- Introduce and advertise unique pizza flavors that are only available in XXL size.
+- Since XXL is the largest pizza size, this could be a great meal for a groups such as families with kids, friends, meetings, parties etc. The owner could initialize targeted marketing campaigns to push the XXL pizza size among these potential customer groups.
+
 ## 5.	List the top 5 most ordered pizza types along with their quantities.
 ```mysql
 SELECT 
