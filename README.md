@@ -280,7 +280,7 @@ Visualization:
 
 ![Q14](https://i.ibb.co/RQCyPvS/14b.png)
 
-The above graph shows that the revenue curve fluctuates over the 12 months. The months of March, May, July and November generated significant amount of revenue for the pizza shop. Peak revenue of 72.6k dollars was earned in July. Howeve, September and October generated the lowest amount of revenue around 64k dollars.
+The above graph shows that the revenue curve had significant fluctuations over the 12 months. The months of March, May, July and November generated significant amount of revenue for the pizza shop. Peak revenue of 72.6k dollars was earned in July. However, September and October generated the lowest amount of revenue of around 64k dollars.
 
 ### Recommendation
 - Investigate what causes the spikes in May and July. Consider enhancing marketing efforts during these periods or expanding the product line to capitalize on high demand.
@@ -289,3 +289,13 @@ The above graph shows that the revenue curve fluctuates over the 12 months. The 
 -  Focus on providing exceptional customer service and dining experiences during low revenue months to encourage repeat business. Train staff to upsell menu items, engage with customers, and create a welcoming atmosphere. Offer special amenities or entertainment options to differentiate the pizza shop from competitors and attract diners.
 -  Regularly collect customer feedback to understand preferences and areas for improvement. Use this data to innovate the menu and service offerings. Consider seasonal or trending ingredients to keep the menu exciting and relevant.
 
+
+### Dashboard
+
+![Q15](https://i.ibb.co/n0TbLc3/dashboard.png)
+
+### Conclusion
+
+By combining SQL analysis and Power BI visualization, this project was able to answer analytical questions posed by the owner while also gaining valuable business insights by exploring the findings from the visualization. From the insights the owner can get a clear visual concept of individual product sales performance, revenue over time, business growth etc. The recommendation sections can play a critical role in making strategic business decisions, implementing marketing campaigns, comprehending customer preferences and operational planning. By further exploration and analysis, more insights can be gained to make data driven decisions that could bring efficiency in operations and productivity. 
+
+# Thank You!
