@@ -61,6 +61,7 @@ Result:
 ![Q4](https://i.ibb.co/tLGZGKS/4.png)
 
 Visualization:
+
 ![Q4](https://i.ibb.co/VpdWWyD/4bi.png)
 
 ## 5.	List the top 5 most ordered pizza types along with their quantities.
@@ -82,6 +83,7 @@ Result:
 
 ![Q5](https://i.ibb.co/k4mZt52/5.png)
 
+
 ## 6. Find the total quantity of each pizza category ordered.
 ```mysql
 SELECT 
@@ -99,6 +101,10 @@ Result:
 
 ![Q6](https://i.ibb.co/YLGNfcf/6.png)
 
+Visualization:
+
+![Q6](https://i.ibb.co/6s4R3zc/6bi.png)
+
 ## 7. Determine the distribution of orders by hour of the day.
 ```mysql
 SELECT 
@@ -110,6 +116,10 @@ GROUP BY 1;
 Result:
 
 ![Q7](https://i.ibb.co/V3TkPmN/7.png)
+
+Visualization:
+
+![Q7](https://i.ibb.co/pJ8Tf4T/7b.png)
 
 ## 8.	What is the average amount of pizzas ordered per day?
 ```mysql
@@ -146,6 +156,10 @@ Result:
 
 ![Q9](https://i.ibb.co/c8mgHxX/9.png)
 
+Visualization:
+
+![Q9](https://i.ibb.co/cbcDWLP/5bi.png)
+
 ## 10.	Calculate the percentage contribution of each pizza type to total revenue.
 ```mysql
 SELECT 
@@ -181,6 +195,10 @@ FROM
 Result:
 
 ![Q11](https://i.ibb.co/L0FyBZt/11.png)
+
+Visualization:
+
+![Q11](https://i.ibb.co/CV6jzDq/11b.png) by month
 
 ## 12.	Find the top 3 most ordered pizza types based on revenue for each pizza category.
 ```mysql
@@ -231,6 +249,10 @@ ORDER BY 2 DESC;
 Result:
 
 ![Q14](https://i.ibb.co/q1y9W1C/14.png)
+
+Visualization:
+
+![Q14](https://i.ibb.co/RQCyPvS/14b.png)
 
 
 
