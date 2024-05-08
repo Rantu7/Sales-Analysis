@@ -1,5 +1,5 @@
 # <p align="center">Pizza Sales Data Analysis</p>
-# <p align="center">![Pic](https://i.ibb.co/19dzzP7/photo-1571997478779-2adcbbe9ab2f-q-80-w-1887-auto-format-fit-crop-ixlib-rb-4-0.jpg)</p>
+# <p align="center">![Pic](https://unsplash.com/photos/brown-and-white-stone-fragment-XLmhRnV8yuc)</p>
 
 ## Objective
 The objective of the "Pizza Sales Data Analysis" project is to gain valuable insights by answering critical business questions posed by the owner. By leveraging SQL programming in MySQL, key performance indicators such as total revenue, total orders, sales per day etc. along with more complex questions were answered . To enhance understanding and facilitate decision-making, the results were then visualized using relevant graphs and charts in Power BI. Through this approach, we tried to provide actionable insights that could assist the owner to make calculated strategic decisions and drive business growth.
