@@ -1,7 +1,8 @@
 # <p align="center">Pizza Sales Data Analysis</p>
-# <p align="center">![Pic](https://unsplash.com/photos/selective-focus-photography-of-two-pizzas-exSEmuA7R7k)</p>
+# <p align="center">![Pic](https://i.ibb.co/19dzzP7/photo-1571997478779-2adcbbe9ab2f-q-80-w-1887-auto-format-fit-crop-ixlib-rb-4-0.jpg)</p>
+
 ## Objective
-The objective of the "Pizza Sales Data Analysis" project is to gain valuable insights by answering critical business questions posed by the owner. By leveraging SQL programming in MySQL, key performance indicators such as total revenue, total orders, sales per day etc. along with more complex questions were answered . To enhance understanding and facilitate decision-making, the results were then visualized using relevant graphs and charts in Power BI. Through this approach, we tried to provide actionable insights that would assist the owner to make calculated strategic decisions and drive business growth.
+The objective of the "Pizza Sales Data Analysis" project is to gain valuable insights by answering critical business questions posed by the owner. By leveraging SQL programming in MySQL, key performance indicators such as total revenue, total orders, sales per day etc. along with more complex questions were answered . To enhance understanding and facilitate decision-making, the results were then visualized using relevant graphs and charts in Power BI. Through this approach, we tried to provide actionable insights that could assist the owner to make calculated strategic decisions and drive business growth.
 
 ## About the Data
 The data set consisted of total 4 .csv files which can be found here. Brief description about the columns in the data files are given in the table below, where the first row indicates the file names:
@@ -291,12 +292,12 @@ The above graph shows that the revenue curve had significant fluctuations over t
 -  Regularly collect customer feedback to understand preferences and areas for improvement. Use this data to innovate the menu and service offerings. Consider seasonal or trending ingredients to keep the menu exciting and relevant.
 
 
-### Dashboard
+## Dashboard
 
 ![Q15](https://i.ibb.co/n0TbLc3/dashboard.png)
 
-### Conclusion
+## Conclusion
 
 By combining SQL analysis and Power BI visualization, this project was able to answer analytical questions posed by the owner while also gaining valuable business insights by exploring the findings from the visualization. From the insights the owner can get a clear visual concept of individual product sales performance, revenue over time, business growth etc. The recommendation sections can play a critical role in making strategic business decisions, implementing marketing campaigns, comprehending customer preferences and operational planning. By further exploration and analysis, more insights can be gained to make data driven decisions that could bring efficiency in operations and productivity. 
 
-# Thank You!
+## Thank You!
