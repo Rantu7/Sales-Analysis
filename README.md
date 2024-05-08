@@ -128,6 +128,15 @@ Visualization:
 
 ![Q7](https://i.ibb.co/pJ8Tf4T/7b.png)
 
+The above graph shows the number of orders hit its peak at 12 pm and stays consistent till 1pm, which is normal for lunch hours. From 3pm to 6pm, the order count keeps increasing from 1.5k to 2.4k. This tells that buyers also prefer ordering from the pizza shop for afternoon or evening snacks. However, the orders start decreasing after 6pm and does not rise at all until the shop closes at 12 am. This means, although customer are placing orders for lunch and evening snacks, the pizza shop is not popular for dinner. 
+
+# Recommendations
+- Create a welcoming and inviting atmosphere during dinner hours by adjusting lighting, playing background music, and ensuring cleanliness and comfort in the dining area. Consider adding outdoor seating or entertainment options to enhance the dining experience.
+- Create special offers or discounts specifically for dinner hours to encourage customers to visit during that time. This could include meal deals, discounts on certain menu items, or limited-time promotions available exclusively for dinner.
+- Add new menu items or variations specifically designed for dinner, such as specialty pizzas, appetizers, drinks, or desserts. Offering a diverse range of options can attract customers looking for a satisfying dinner experience.
+- Introduce family-sized meal options or combo deals that cater to larger groups dining together for dinner. Promote these options through targeted marketing campaigns.
+- Offer special deals or discounts for delivery and takeout orders placed during dinner hours. This can encourage customers to order from the pizza shop for dinner, even if they prefer to dine at home.
+
 ## 8.	What is the average amount of pizzas ordered per day?
 ```mysql
 SELECT 
