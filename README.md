@@ -223,7 +223,7 @@ Visualization:
 According to the above graph, the cumulative revenue starts at 1M in January and consistently grows to reach 24M by November. The curve is mostly smooth, indicating steady growth of the business without any significant fluctuations or drops.
 
 ### Recommendation
-- Analyze what contributed to the revenue spikes around May and September to understand which strategies or market conditions were most effective.
+
 - Once growth factors are identified, focus on sustaining these strategies and explore ways to enhance them.
 - As the revenue is growing, the company should prepare for scaling operations to handle increased business size without compromising service quality.
 -  Continue monitoring revenue trends closely to quickly identify any deviations from expected growth patterns and address them proactively.
